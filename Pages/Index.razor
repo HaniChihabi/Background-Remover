@@ -12,24 +12,39 @@
     <div class="upload">
         <div class="upload-content">
             <InputFile class="custom-file-input" multiple OnChange="OnChange" accept="image/png, image/jpeg, image/gif" id="inputFile" />
-            <label for="inputFile" class="button">Upload Image</label>    
+            <label for="inputFile" class="button">Upload Image</label>   
+            <p1 class="text">Or drop it</p1>
         </div>      
-              <p1 class="text">Or drop it</p1>
+              
         </div>
-    <div class="display">
-        @if (!imageUploaded){
-            <p1 class="text2">Your image comes here!</p1>
-            }
-        @foreach (var item in filesBase64)
-    {
-        <div class="image-container">
-            <img src="data:@item.contentType;base64,@item.base64data" />
-        </div>
-    }
+        @if (!imageUploaded) {
+    
+}
+<div class="display">
+    <div class="display-content">
+     @foreach (var item in filesBase64.Select((file, index) => new { file, index }))
+{
+    
+    <div class="image-container">
+        <img src="data:@item.file.contentType;base64,@item.file.base64data" />
     </div>
-     <div class="remove-bg">
+}
+
+    </div>
+    <div class="action-buttons">
+        @if (imageUploaded) {
+        <div class="remove-bg">
             <button class="btn btn-secondary" @onclick="RemoveBackgrounds">Remove Backgrounds</button>
+        </div>
+            <button class="btn btn-danger" @onclick="DeleteLastImage">Delete Last Image</button>
+        }
     </div>
+    @if (!imageUploaded) {
+    <h1 class="title">Your Image</h1>
+}
+
+</div>
+
 </div>
 
 
@@ -88,6 +103,19 @@
         }
         StateHasChanged(); // Refresh UI to display the updated images
     }
+void DeleteLastImage()
+{
+    if (filesBase64.Any())
+    {
+        filesBase64.RemoveAt(filesBase64.Count - 1);
+        if (filesBase64.Count == 0)
+        {
+            imageUploaded = false; // No images left, show the title again
+        }
+    }
+    StateHasChanged(); // Refresh the UI
+}
+
 
   async Task<string?> RemoveBackground(string base64Image)
 {
@@ -98,7 +126,7 @@
     }), Encoding.UTF8, "application/json");
 
     requestContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-    requestContent.Headers.Add("X-Api-Key", removeBgApiKey);
+    requestContent.Headers.Add("X-Api-Key", "1StRVGgX82WmpgCnZhgGepYe");
 
     var response = await Http.PostAsync("https://api.remove.bg/v1.0/removebg", requestContent);
     if (response.IsSuccessStatusCode)

@@ -12,11 +12,15 @@ html, body {
 }
 
 /* Center the .pictures container */
-
-
 /* .message{
     padding: 50px;
 } */
+
+.cards-container {
+    display: flex;
+    width: 100%; /* Take full width of the parent */
+    height: 100%; /* Optional: Take full height if needed */
+}
 
 .button {
     display: flex;
@@ -33,19 +37,24 @@ html, body {
     transition: all 0.2s ease; /* Smooth transition for hover effects */
     width: 300px;
     text-align: center;
-    margin: 100px;
     font-weight: 700;
 }
 
 .text{
     text-align: center;
-    justify-content: center;
-    align-items: center;
     font-size: 25px;
-    position: absolute;
     bottom: 70px;
     color: #7e7e7e;
     font-weight:500;
+    position: relative;
+    top: 20px;
+}
+.title{
+    position: relative;
+    right: 70px;
+    bottom: 150px;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .button:hover, .button:focus {
@@ -63,14 +72,7 @@ html, body {
     margin: 10px; /* Adds spacing between the buttons */
     position: absolute;
 }
-.image-container img {
-    max-width: 600px; /* Maximum width images can have */
-    max-height: 400px; /* Maximum height images can have */
-    object-fit: contain; /* Ensures content is scaled to maintain its aspect ratio while fitting within the element's content box */
-    width: auto; /* Width is automatically adjusted */
-    height: auto; /* Height is automatically adjusted */
-    border-radius: 20px; /* Optional: Adds rounded corners to your images */
-}
+
 .cards-container {
     display: flex;
     flex-direction: row; /* Ensure horizontal layout */
@@ -78,14 +80,17 @@ html, body {
     align-items: start; /* Adjust if you want them aligned at the top */
     gap: 100px; /* Adjust the gap as needed */
 }
-.upload {
+
+.upload-content{
+    margin: 100px;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers children horizontally in the container */
     justify-content: center; /* Centers children vertically if there's enough height */
+    position: relative;
 }
 
-.upload, .display {
+.display-content {
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers children horizontally in the container */
@@ -93,8 +98,7 @@ html, body {
     flex-basis: 50%; /* Each card takes up half of the container's width */
     margin: 0 auto;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -102,22 +106,51 @@ html, body {
     position: fixed;
     left: 5%;
     bottom: 40%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers children horizontally in the container */
+    justify-content: center; /* Centers children vertically if there's enough height */
+    flex-basis: 50%; /* Each card takes up half of the container's width */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+
 .display{
+    justify-content: center;
+    align-items: center;
     position: fixed;
     right: 25%;
     bottom: 40%;
 }
 
+.upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    /* Rest of your styles */
+}
+
 .image-container img {
-    max-width: 100%; /* Ensure the image does not exceed the card's width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensures image does not exceed the container's width */
+    max-height: 400px; /* Example height */
+    min-width: 100px; /* Minimum width */
+    object-fit: contain; /* Ensures the image is fully visible */
     border-radius: 20px;
 }
 
 .text2{
     padding: 100px;
+}
+
+.action-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding-top: 5px;
 }
 
 /* Ensure other styles are adjusted accordingly to maintain the layout */
