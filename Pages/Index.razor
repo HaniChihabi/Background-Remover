@@ -9,13 +9,17 @@
 @inject IJSRuntime JSRuntime
 
 <div class="cards-container">
+    <div class="texts">
+                <h1>Welcome to bg remover.</h1>
+                <h1>Let's get rid of that background!</h1>
+            </div>
     <div class="upload">
         <div class="upload-content">
+            
             <InputFile class="custom-file-input" multiple OnChange="OnChange" accept="image/png, image/jpeg, image/gif" id="inputFile" />
             <label for="inputFile" class="button">Upload Image</label>   
-            <p1 class="text">Or drop it</p1>
-        </div>      
-              
+            @* <p1 class="text">Or drop it</p1> *@
+        </div> 
         </div>
         @if (!imageUploaded) {
     
@@ -80,14 +84,12 @@
     }
 
     // After successfully adding images, update the flag to indicate an image has been uploaded
-    imageUploaded = true; // Indicate that at least one image has been uploaded
-
-    // Call StateHasChanged to notify Blazor that the component's state has changed and the UI should be re-rendered
+    imageUploaded = true;
     StateHasChanged();
-
-    // If you had any other logic to execute after this, it would go here, but typically,
-    // updating state and refreshing the UI would be the last steps in the event handler.
 }
+
+// You can refactor the code from OnChange to a new method, e.g., ProcessUploadedFiles, and call it both from OnChange and OnDrop.
+
 
 
     async Task RemoveBackgrounds()
