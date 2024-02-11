@@ -41,6 +41,8 @@
             <button class="btn btn-secondary" @onclick="RemoveBackgrounds">Remove Backgrounds</button>
         </div>
             <button class="btn btn-danger" @onclick="DeleteLastImage">Delete Last Image</button>
+            <button class="btn btn-primary" @onclick="DownloadImage">Download Image</button>
+
         }
     </div>
     @if (!imageUploaded) {
@@ -117,6 +119,15 @@ void DeleteLastImage()
     }
     StateHasChanged(); // Refresh the UI
 }
+async Task DownloadImage()
+{
+    if (filesBase64.Any())
+    {
+        var image = filesBase64.Last(); // Assuming you want to download the last image in the list
+        await JSRuntime.InvokeVoidAsync("saveAsFile", image.fileName, image.base64data);
+    }
+}
+
 
 
   async Task<string?> RemoveBackground(string base64Image)

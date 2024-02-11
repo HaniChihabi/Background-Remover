@@ -37,5 +37,16 @@
     </div>
 <script src="js/script.js"></script>
     <script src="_framework/blazor.server.js"></script>
+    <script>
+function saveAsFile(filename, base64data) {
+    var link = document.createElement('a');
+    link.href = `data:image/png;base64,${base64data}`;
+    link.download = filename;
+    document.body.appendChild(link); // Needed for Firefox
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
 </body>
 </html>
