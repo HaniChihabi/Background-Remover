@@ -1,0 +1,120 @@
+﻿@using System.Text.Json 
+@using System.Text 
+@using System.Net.Http.Headers
+@using System.IO 
+
+@page "/"
+@inject HttpClient Http
+
+@inject IJSRuntime JSRuntime
+
+<div class="cards-container">
+    <div class="upload">
+        <div class="upload-content">
+            <InputFile class="custom-file-input" multiple OnChange="OnChange" accept="image/png, image/jpeg, image/gif" id="inputFile" />
+            <label for="inputFile" class="button">Upload Image</label>    
+        </div>      
+              <p1 class="text">Or drop it</p1>
+        </div>
+    <div class="display">
+        @if (!imageUploaded){
+            <p1 class="text2">Your image comes here!</p1>
+            }
+        @foreach (var item in filesBase64)
+    {
+        <div class="image-container">
+            <img src="data:@item.contentType;base64,@item.base64data" />
+        </div>
+    }
+    </div>
+     <div class="remove-bg">
+            <button class="btn btn-secondary" @onclick="RemoveBackgrounds">Remove Backgrounds</button>
+    </div>
+</div>
+
+
+
+@code {
+    List<ImageFile> filesBase64 = new List<ImageFile>();
+    List<byte[]> originalImages = new List<byte[]>(); // Store original images for background removal
+    string message = "Choose your picture!";
+    bool isDisabled = false;
+    string removeBgApiKey = "P9GzszacRRhUFJc68TkW2aoh"; // Replace with your actual API key
+    bool imageUploaded = false; // Flag to track image upload
+
+    async Task OnChange(InputFileChangeEventArgs e)
+{   
+    // Your logic to handle the file upload starts here
+    originalImages.Clear(); // Clear previous images
+    filesBase64.Clear(); // Optionally clear previous displayed images
+    var files = e.GetMultipleFiles();
+    foreach(var file in files)
+    {
+        var resizedFile = await file.RequestImageFileAsync(file.ContentType, 640, 480);
+        var buf = new byte[resizedFile.Size];
+        using (var stream = resizedFile.OpenReadStream())
+        {
+            await stream.ReadAsync(buf);
+        }
+
+        originalImages.Add(buf); // Store original image data for later processing
+
+        // Convert and store the image for display
+        var base64Image = Convert.ToBase64String(buf);
+        filesBase64.Add(new ImageFile { base64data = base64Image, contentType = file.ContentType, fileName = file.Name });
+    }
+
+    // After successfully adding images, update the flag to indicate an image has been uploaded
+    imageUploaded = true; // Indicate that at least one image has been uploaded
+
+    // Call StateHasChanged to notify Blazor that the component's state has changed and the UI should be re-rendered
+    StateHasChanged();
+
+    // If you had any other logic to execute after this, it would go here, but typically,
+    // updating state and refreshing the UI would be the last steps in the event handler.
+}
+
+
+    async Task RemoveBackgrounds()
+    {
+        for (int i = 0; i < originalImages.Count; i++)
+        {
+            var base64Image = Convert.ToBase64String(originalImages[i]);
+            var response = await RemoveBackground(base64Image);
+            if (response != null)
+            {
+                filesBase64[i] = new ImageFile { base64data = response, contentType = "image/png", fileName = filesBase64[i].fileName }; // Update image with removed background
+            }
+        }
+        StateHasChanged(); // Refresh UI to display the updated images
+    }
+
+  async Task<string?> RemoveBackground(string base64Image)
+{
+    var requestContent = new StringContent(JsonSerializer.Serialize(new
+    {
+        image_file_b64 = base64Image,
+        size = "auto"
+    }), Encoding.UTF8, "application/json");
+
+    requestContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
+    requestContent.Headers.Add("X-Api-Key", removeBgApiKey);
+
+    var response = await Http.PostAsync("https://api.remove.bg/v1.0/removebg", requestContent);
+    if (response.IsSuccessStatusCode)
+    {
+        using (var responseStream = await response.Content.ReadAsStreamAsync())
+        using (var memoryStream = new MemoryStream())
+        {
+            await responseStream.CopyToAsync(memoryStream);
+            var resultImageBytes = memoryStream.ToArray();
+            return Convert.ToBase64String(resultImageBytes);
+        }
+    }
+    else
+    {
+        // Return null or an appropriate default value if the API call fails
+        return null;
+    }
+}
+}

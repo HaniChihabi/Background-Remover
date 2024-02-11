@@ -1,0 +1,96 @@
+/* _content/bgapp/Shared/MainLayout.razor.rz.scp.css */
+.page[b-cct95fkvcz] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-cct95fkvcz] {
+    flex: 1;
+}
+
+.message[b-cct95fkvcz]{
+    position: absolute;
+    left: 200px;
+}
+.sidebar[b-cct95fkvcz] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.image-container[b-cct95fkvcz] {
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 auto; /* Center the container itself if needed */
+}
+
+.pictures[b-cct95fkvcz]{
+    position: absolute;
+    left: 700px;
+}
+
+.image-container img[b-cct95fkvcz] {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+.custom-file[b-cct95fkvcz]{
+    justify-content: center;
+    align-items: center;
+}
+.top-row[b-cct95fkvcz] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-cct95fkvcz]  a, .top-row .btn-link[b-cct95fkvcz] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-cct95fkvcz] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-cct95fkvcz] {
+        display: none;
+    }
+
+    .top-row.auth[b-cct95fkvcz] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-cct95fkvcz], .top-row .btn-link[b-cct95fkvcz] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-cct95fkvcz] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-cct95fkvcz] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-cct95fkvcz] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-cct95fkvcz], article[b-cct95fkvcz] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/bgapp/Shared/NavMenu.razor.rz.scp.css */

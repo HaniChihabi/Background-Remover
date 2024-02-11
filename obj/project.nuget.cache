@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "UOMlOsMSSe0wZ/+/57w2Q+rN5MNB8eKhHMU8IfcV+De5X0a6/oRpWvfwZDvm5o9eHpjxQ0mooT331h8EePhthA==",
+  "success": true,
+  "projectFilePath": "/Users/hanichihabi/Desktop/bg/bgapp/bgapp.csproj",
+  "expectedPackageFiles": [
+    "/Users/hanichihabi/.nuget/packages/system.net.http.json/8.0.0/system.net.http.json.8.0.0.nupkg.sha512",
+    "/Users/hanichihabi/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
+    "/Users/hanichihabi/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
