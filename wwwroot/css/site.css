@@ -1,18 +1,6 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
 html, body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-.centered-container {
-    position: fixed; /* Use fixed to center the container */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust to center the container */
-    text-align: center; /* Center the contents */
-}
-html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
     height: 100%;
@@ -48,13 +36,7 @@ html, body {
     margin: 100px;
     font-weight: 700;
 }
-.upload-content{
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-        padding: 25px; /* Adjusted padding for better shape */
 
-}
 .text{
     text-align: center;
     justify-content: center;
@@ -64,9 +46,8 @@ html, body {
     bottom: 70px;
     color: #7e7e7e;
     font-weight:500;
-
-
 }
+
 .button:hover, .button:focus {
     background-color: rgb(42, 173, 255); /* Base background color */
     color: #fff;
@@ -84,7 +65,7 @@ html, body {
 }
 .image-container img {
     max-width: 600px; /* Maximum width images can have */
-    max-height: 200px; /* Maximum height images can have */
+    max-height: 400px; /* Maximum height images can have */
     object-fit: contain; /* Ensures content is scaled to maintain its aspect ratio while fitting within the element's content box */
     width: auto; /* Width is automatically adjusted */
     height: auto; /* Height is automatically adjusted */
@@ -118,14 +99,15 @@ html, body {
 }
 
 .upload{
-    position: relative;
-    right: 100px;
+    position: fixed;
+    left: 5%;
+    bottom: 40%;
     
 }
 .display{
-    position: relative;
-    bottom: 100px;
-    left: 300px;
+    position: fixed;
+    right: 25%;
+    bottom: 40%;
 }
 
 .image-container img {
