@@ -1,7 +1,9 @@
 ﻿@using System.Text.Json 
 @using System.Text 
 @using System.Net.Http.Headers
-@using System.IO 
+@using System.IO
+@using Syncfusion.Blazor.Buttons
+
 
 @page "/"
 @inject HttpClient Http
@@ -12,6 +14,7 @@
     <div class="texts">
                 <h1>Welcome to bg remover.</h1>
                 <h1>Let's get rid of that background!</h1>
+                
             </div>
     <div class="upload">
         <div class="upload-content">
@@ -25,25 +28,27 @@
     
 }
 <div class="display">
-    <div class="display-content">
-     @foreach (var item in filesBase64.Select((file, index) => new { file, index }))
-{
-    
-    <div class="image-container">
-        <img src="data:@item.file.contentType;base64,@item.file.base64data" />
-    </div>
-}
+   <!-- Image Display Container -->
+<div class="image-display-container">
+    @foreach (var item in filesBase64.Select((file, index) => new { file, index }))
+    {
+        <div class="image-container">
+            <img src="data:@item.file.contentType;base64,@item.file.base64data" />
+        </div>
+    }
+</div>
 
-    </div>
+<div class="buttons">
     <div class="action-buttons">
         @if (imageUploaded) {
-        <div class="remove-bg">
             <button class="btn btn-secondary" @onclick="RemoveBackgrounds">Remove Backgrounds</button>
-        </div>
-            <button class="btn btn-danger" @onclick="DeleteLastImage">Delete Last Image</button>
+            <button class="btn btn-danger" @onclick="DeleteLastImage">x</button>
             <button class="btn btn-primary" @onclick="DownloadImage">Download Image</button>
+            <SfIcon Name="IconName.Cut" Size="IconSize.Small"></SfIcon>
+<SfIcon Name="IconName.Upload" Title="Upload"></SfIcon>
 
         }
+    </div>
     </div>
     @if (!imageUploaded) {
     <h1 class="title">Your Image</h1>

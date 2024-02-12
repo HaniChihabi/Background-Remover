@@ -57,7 +57,7 @@ html, body {
 .title{
     position: relative;
     right: 70px;
-    bottom: 150px;
+    bottom: 100px;
     font-size: 50px;
     font-weight: 700;
 }
@@ -127,7 +127,7 @@ html, body {
     align-items: center;
     position: fixed;
     right: 25%;
-    bottom: 40%;
+    bottom: 30%;
 }
 
 .upload {
@@ -149,15 +149,25 @@ html, body {
 .text2{
     padding: 100px;
 }
-
-.action-buttons{
+.buttons{
     display: flex;
     flex-direction: column;
     align-items: center; /* Center horizontally */
     justify-content: center; /* Center vertically */
     padding-top: 5px;
 }
+.action-buttons{
+    display: block;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding-top: 5px;
+}
 
+.action-buttons button{ 
+       border-radius: 20px;
+
+}
 /* Ensure other styles are adjusted accordingly to maintain the layout */
 
 .custom-file-input {
@@ -180,6 +190,27 @@ html, body {
     height: auto;
     border-radius: 20px; /* Optional: Adds rounded corners to your images */
 }
+
+
+.image-display-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows multiple images to wrap within the container */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    gap: 10px; /* Space between images */
+    padding: 20px; /* Padding around the entire container */
+    max-width: 90%; /* Adjust based on your layout needs */
+    margin: auto; /* Center the container */
+    position: relative;
+    bottom: 30px;
+}
+
+.image-container img {
+    width: 600px; /* Fixed width for all images */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the container without stretching */
+}
+
 
 /* Further styles remain unchanged */
 

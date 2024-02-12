@@ -12,4 +12,7 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/Users/hanichihabi/.nuget/packages/" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)syncfusion.blazor/24.2.4/buildTransitive/Syncfusion.Blazor.props" Condition="Exists('$(NuGetPackageRoot)syncfusion.blazor/24.2.4/buildTransitive/Syncfusion.Blazor.props')" />
+  </ImportGroup>
 </Project>
