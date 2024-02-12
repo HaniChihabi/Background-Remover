@@ -35,3 +35,8 @@
 /Users/hanichihabi/Desktop/bg/bgapp/bin/Debug/net7.0/System.Text.Json.dll
 /Users/hanichihabi/Desktop/bg/bgapp/bin/Debug/net7.0/runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll
 /Users/hanichihabi/Desktop/bg/bgapp/obj/Debug/net7.0/bgapp.csproj.CopyComplete
+/Users/hanichihabi/Desktop/bg/bgapp/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/hanichihabi/Desktop/bg/bgapp/bin/Debug/net7.0/Syncfusion.Blazor.dll
+/Users/hanichihabi/Desktop/bg/bgapp/bin/Debug/net7.0/Syncfusion.ExcelExport.Net.dll
+/Users/hanichihabi/Desktop/bg/bgapp/bin/Debug/net7.0/Syncfusion.Licensing.dll
+/Users/hanichihabi/Desktop/bg/bgapp/bin/Debug/net7.0/Syncfusion.PdfExport.Net.dll

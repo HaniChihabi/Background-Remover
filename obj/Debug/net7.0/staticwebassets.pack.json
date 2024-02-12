@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/Images/favicon.png"
     },
     {
+      "Id": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/Images/png background.png",
+      "PackagePath": "staticwebassets/Images/png background.png"
+    },
+    {
       "Id": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },
