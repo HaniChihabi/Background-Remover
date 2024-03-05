@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = bgapp
 build_property.RootNamespace = bgapp
-build_property.ProjectDir = /Users/hanichihabi/Desktop/bg/bgapp/
+build_property.ProjectDir = /Users/hanichihabi/Desktop/IT/bg/bgapp/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/hanichihabi/Desktop/bg/bgapp
+build_property.MSBuildProjectDirectory = /Users/hanichihabi/Desktop/IT/bg/bgapp
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/hanichihabi/Desktop/bg/bgapp/App.razor]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hanichihabi/Desktop/bg/bgapp/Pages/Counter.razor]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hanichihabi/Desktop/bg/bgapp/Pages/FetchData.razor]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hanichihabi/Desktop/bg/bgapp/Pages/Index.razor]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hanichihabi/Desktop/bg/bgapp/Shared/SurveyPrompt.razor]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hanichihabi/Desktop/bg/bgapp/_Imports.razor]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hanichihabi/Desktop/bg/bgapp/Shared/MainLayout.razor]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-cct95fkvcz
 
-[/Users/hanichihabi/Desktop/bg/bgapp/Shared/NavMenu.razor]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-jdk9ezn22b
 
-[/Users/hanichihabi/Desktop/bg/bgapp/Pages/Error.cshtml]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/hanichihabi/Desktop/bg/bgapp/Pages/_Host.cshtml]
+[/Users/hanichihabi/Desktop/IT/bg/bgapp/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

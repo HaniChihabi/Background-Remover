@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "E0amzaYVdGPBfiteJkAobNmmXQzHQfq1vAp7/nBTi/g=",
+  "Hash": "Vi4R6/KkC5Rbe95K+SSFlTvE1gRaxYx3lK1u3j2aDDA=",
   "Source": "bgapp",
   "BasePath": "_content/bgapp",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "bgapp/wwwroot",
       "Source": "bgapp",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "Pattern": "**"
     }
@@ -1887,10 +1887,10 @@
       "OriginalItemSpec": "/Users/hanichihabi/.nuget/packages/syncfusion.blazor/24.2.4/staticwebassets/styles/tailwind.css"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/obj/Debug/net7.0/scopedcss/bundle/bgapp.styles.css",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/obj/Debug/net7.0/scopedcss/bundle/bgapp.styles.css",
       "SourceId": "bgapp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/obj/Debug/net7.0/scopedcss/bundle/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/obj/Debug/net7.0/scopedcss/bundle/",
       "BasePath": "_content/bgapp",
       "RelativePath": "bgapp.styles.css",
       "AssetKind": "All",
@@ -1901,13 +1901,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/hanichihabi/Desktop/bg/bgapp/obj/Debug/net7.0/scopedcss/bundle/bgapp.styles.css"
+      "OriginalItemSpec": "/Users/hanichihabi/Desktop/IT/bg/bgapp/obj/Debug/net7.0/scopedcss/bundle/bgapp.styles.css"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/obj/Debug/net7.0/scopedcss/projectbundle/bgapp.bundle.scp.css",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/obj/Debug/net7.0/scopedcss/projectbundle/bgapp.bundle.scp.css",
       "SourceId": "bgapp",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/obj/Debug/net7.0/scopedcss/projectbundle/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/obj/Debug/net7.0/scopedcss/projectbundle/",
       "BasePath": "_content/bgapp",
       "RelativePath": "bgapp.bundle.scp.css",
       "AssetKind": "All",
@@ -1918,13 +1918,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/hanichihabi/Desktop/bg/bgapp/obj/Debug/net7.0/scopedcss/projectbundle/bgapp.bundle.scp.css"
+      "OriginalItemSpec": "/Users/hanichihabi/Desktop/IT/bg/bgapp/obj/Debug/net7.0/scopedcss/projectbundle/bgapp.bundle.scp.css"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/bootstrap/bootstrap.min.css",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -1938,10 +1938,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/FONT-LICENSE",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -1972,10 +1972,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -1989,10 +1989,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -2006,10 +2006,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -2023,10 +2023,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -2040,10 +2040,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -2057,10 +2057,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -2074,10 +2074,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/ICON-LICENSE",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -2091,10 +2091,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/open-iconic/README.md",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/open-iconic/README.md",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -2108,10 +2108,10 @@
       "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/site.css",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/site.css",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -2125,10 +2125,10 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/css/site.js",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/css/site.js",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "css/site.js",
       "AssetKind": "All",
@@ -2142,10 +2142,10 @@
       "OriginalItemSpec": "wwwroot/css/site.js"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/favicon.png",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/favicon.png",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot/favicon.png"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/Images/CanIBallIcon.png",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/Images/CanIBallIcon.png",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "Images/CanIBallIcon.png",
       "AssetKind": "All",
@@ -2176,10 +2176,10 @@
       "OriginalItemSpec": "wwwroot/Images/CanIBallIcon.png"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/Images/favicon.png",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/Images/favicon.png",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "Images/favicon.png",
       "AssetKind": "All",
@@ -2193,10 +2193,10 @@
       "OriginalItemSpec": "wwwroot/Images/favicon.png"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/Images/png background.png",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/Images/png background.png",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "Images/png background.png",
       "AssetKind": "All",
@@ -2210,10 +2210,10 @@
       "OriginalItemSpec": "wwwroot/Images/png background.png"
     },
     {
-      "Identity": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/js/site.js",
+      "Identity": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/js/site.js",
       "SourceId": "bgapp",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/hanichihabi/Desktop/bg/bgapp/wwwroot/",
+      "ContentRoot": "/Users/hanichihabi/Desktop/IT/bg/bgapp/wwwroot/",
       "BasePath": "_content/bgapp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

@@ -350,4 +350,18 @@ html, body {
         content: "An error has occurred."
     }
 
+    .squares-container {
+        position: fixed;
+        bottom: 0px;
+        left: 100px;
+        display: flex; /* Align squares horizontally */
+        justify-content: flex-start; /* Align squares to the left */
+        gap: 10px; /* Spacing between squares */
+        margin-bottom: 20px; /* Space below the squares container */
+    }
     
+    .square {
+        width: 50px; /* Square size */
+        height: 50px; /* Square size */
+        background-color: #333; /* Square color */
+    }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5pEQigbVVwneU9LeubawtKfp+8BPtEvgwo8+O+DMFfTy41DycCvmjtpvOLSNeTKH68ucAhz2t2j3Zh9sTGZpQw==",
+  "dgSpecHash": "B6ciuomBoZ3rVW/uKlj9AaAfyzv5mHc+/+osgxREJum1tiW3LxkzgyQVG+iMSY7F/CPqVNdJz82/9tY3tsHvEw==",
   "success": true,
-  "projectFilePath": "/Users/hanichihabi/Desktop/bg/bgapp/bgapp.csproj",
+  "projectFilePath": "/Users/hanichihabi/Desktop/IT/bg/bgapp/bgapp.csproj",
   "expectedPackageFiles": [
     "/Users/hanichihabi/.nuget/packages/microsoft.aspnetcore.authorization/7.0.0/microsoft.aspnetcore.authorization.7.0.0.nupkg.sha512",
     "/Users/hanichihabi/.nuget/packages/microsoft.aspnetcore.components/7.0.0/microsoft.aspnetcore.components.7.0.0.nupkg.sha512",

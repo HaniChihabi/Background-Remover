@@ -1269,11 +1269,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hanichihabi/Desktop/bg/bgapp/bgapp.csproj",
+      "projectUniqueName": "/Users/hanichihabi/Desktop/IT/bg/bgapp/bgapp.csproj",
       "projectName": "bgapp",
-      "projectPath": "/Users/hanichihabi/Desktop/bg/bgapp/bgapp.csproj",
+      "projectPath": "/Users/hanichihabi/Desktop/IT/bg/bgapp/bgapp.csproj",
       "packagesPath": "/Users/hanichihabi/.nuget/packages/",
-      "outputPath": "/Users/hanichihabi/Desktop/bg/bgapp/obj/",
+      "outputPath": "/Users/hanichihabi/Desktop/IT/bg/bgapp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/hanichihabi/.nuget/NuGet/NuGet.Config"

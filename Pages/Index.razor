@@ -81,7 +81,7 @@
     List<byte[]> originalImages = new List<byte[]>(); // Store original images for background removal
     string message = "Choose your picture!";
     bool isDisabled = false;
-    string removeBgApiKey = "P9GzszacRRhUFJc68TkW2aoh"; // Replace with your actual API key
+    string removeBgApiKey = "JGuT1LHRwo7VLrrAnBWVcpAk"; // Replace with your actual API key
     bool imageUploaded = false; // Flag to track image upload
 
     async Task OnChange(InputFileChangeEventArgs e)
@@ -160,7 +160,7 @@ async Task DownloadImage()
     }), Encoding.UTF8, "application/json");
 
     requestContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-    requestContent.Headers.Add("X-Api-Key", "1StRVGgX82WmpgCnZhgGepYe");
+    requestContent.Headers.Add("X-Api-Key", "JGuT1LHRwo7VLrrAnBWVcpAk");
 
     var response = await Http.PostAsync("https://api.remove.bg/v1.0/removebg", requestContent);
     if (response.IsSuccessStatusCode)
