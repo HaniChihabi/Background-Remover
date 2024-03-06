@@ -351,17 +351,17 @@ html, body {
     }
 
     .squares-container {
+        display: flex; /* Use flex layout */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        align-items: flex-start; /* Align items at the start of the container */
         position: fixed;
         bottom: 0px;
-        left: 100px;
-        display: flex; /* Align squares horizontally */
-        justify-content: flex-start; /* Align squares to the left */
-        gap: 10px; /* Spacing between squares */
-        margin-bottom: 20px; /* Space below the squares container */
+        gap: 0px; /* Spacing between squares */
     }
     
+    
     .square {
-        width: 50px; /* Square size */
+        width: 70px; /* Square size */
         height: 50px; /* Square size */
         background-color: #333; /* Square color */
     }

@@ -70,7 +70,14 @@
 }
     </div>
 </div>
-
+<div class="squares-container">
+    @foreach (var item in processedImages)
+    {
+        <div class="square">
+            <img src="data:@item.contentType;base64,@item.base64data" class="square-img" />
+        </div>
+    }
+</div>
 
 </div>
 
@@ -79,10 +86,14 @@
 @code {
     List<ImageFile> filesBase64 = new List<ImageFile>();
     List<byte[]> originalImages = new List<byte[]>(); // Store original images for background removal
+        List<ImageFile> processedImages = new List<ImageFile>();
+
     string message = "Choose your picture!";
     bool isDisabled = false;
-    string removeBgApiKey = "JGuT1LHRwo7VLrrAnBWVcpAk"; // Replace with your actual API key
+    string removeBgApiKey = ""; // Replace with your actual API key
     bool imageUploaded = false; // Flag to track image upload
+        HashSet<string> processedImageNames = new HashSet<string>();
+
 
     async Task OnChange(InputFileChangeEventArgs e)
 {   
@@ -115,19 +126,32 @@
 
 
 
-    async Task RemoveBackgrounds()
+  async Task RemoveBackgrounds()
+{
+    // Assuming originalImages holds the bytes for newly uploaded images.
+    // Start the background removal process for new images and update processedImages list.
+    foreach (var image in originalImages.Select((value, index) => new { value, index }))
     {
-        for (int i = 0; i < originalImages.Count; i++)
+        var base64Image = Convert.ToBase64String(image.value);
+        var response = await RemoveBackground(base64Image);
+        if (response != null)
         {
-            var base64Image = Convert.ToBase64String(originalImages[i]);
-            var response = await RemoveBackground(base64Image);
-            if (response != null)
-            {
-                filesBase64[i] = new ImageFile { base64data = response, contentType = "image/png", fileName = filesBase64[i].fileName }; // Update image with removed background
-            }
+            // Add processed image to the list, retaining previously processed images
+            processedImages.Add(new ImageFile { base64data = response, contentType = "image/png", fileName = filesBase64[image.index].fileName });
         }
-        StateHasChanged(); // Refresh UI to display the updated images
+        else
+        {
+            // Optionally, add a placeholder or the original image if processing fails
+            processedImages.Add(new ImageFile { base64data = base64Image, contentType = "image/png", fileName = filesBase64[image.index].fileName });
+        }
     }
+    StateHasChanged(); // Refresh UI to display the updated images list
+}
+
+
+
+
+
 void DeleteLastImage()
 {
     if (filesBase64.Any())
@@ -160,7 +184,7 @@ async Task DownloadImage()
     }), Encoding.UTF8, "application/json");
 
     requestContent.Headers.ContentType = MediaTypeHeaderValue.Parse("application/json");
-    requestContent.Headers.Add("X-Api-Key", "JGuT1LHRwo7VLrrAnBWVcpAk");
+    requestContent.Headers.Add("X-Api-Key", "");
 
     var response = await Http.PostAsync("https://api.remove.bg/v1.0/removebg", requestContent);
     if (response.IsSuccessStatusCode)
