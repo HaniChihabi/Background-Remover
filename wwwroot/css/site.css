@@ -355,8 +355,8 @@ html, body {
         flex-wrap: wrap; /* Allow wrapping if needed */
         align-items: flex-start; /* Align items at the start of the container */
         position: fixed;
-        bottom: 0px;
-        gap: 0px; /* Spacing between squares */
+        bottom: 10px;
+        gap: 10px; /* Spacing between squares */
     }
     
     
